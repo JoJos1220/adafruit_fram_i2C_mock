@@ -1,0 +1,22 @@
+{
+    "name": "adafruit_ina219_mock",
+    "version": "1.0.0",
+    "description": "A simple unity-test mock for the Adafruit INA219 current sensor board",
+    "keywords": "Adafruit INA219, MOCK, Unity",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/JoJos1220/adafruit_INA219_mock.git"
+    },
+    "authors":
+    [
+      {
+        "name": "JoJo1220",
+        "email": "johannes.reichhold@gmail.com",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*"
+  }
