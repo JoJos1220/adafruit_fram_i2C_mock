@@ -1,12 +1,12 @@
 {
-    "name": "adafruit_ina219_mock",
+    "name": "adafruit_fram_i2c_mock",
     "version": "1.0.0",
-    "description": "A simple unity-test mock for the Adafruit INA219 current sensor board",
-    "keywords": "Adafruit INA219, MOCK, Unity",
+    "description": "A simple unity-test mock for the Adafruit FRAM I2C board",
+    "keywords": "Adafruit I2C FRAM, MOCK, Unity",
     "repository":
     {
       "type": "git",
-      "url": "https://github.com/JoJos1220/adafruit_INA219_mock.git"
+      "url": "https://github.com/JoJos1220/adafruit_fram_i2C_mock.git"
     },
     "authors":
     [
