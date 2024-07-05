@@ -9,7 +9,9 @@
 
 #define MB85RC_DEFAULT_ADDRESS (0x50)
 
-#define _MaxSizeFRAM 32768 //Max Words in Fram --> 32768 words x 8 bits
+#ifndef _MaxSizeFRAM 
+  #define _MaxSizeFRAM 32767 //Max Words in Fram --> 32767 words x 8 bits
+#endif
 
 class Adafruit_FRAM_I2C {
   public:
