@@ -30,7 +30,7 @@ jobs:
 
   # These jobs are used to compile the examples fot the specific processor/board.
   # see <https://github.com/marketplace/actions/compile-arduino-sketches>
-  compile-mega:
+  compile-uno:
     name: compile mega examples
     runs-on: ubuntu-latest
     continue-on-error: false
@@ -38,12 +38,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Compile Examples for MEGA
+      # Compile Examples for UNO
       - name: compile sketches
         uses: arduino/compile-sketches@v1
         with:
           verbose: true
-          fqbn: arduino:avr:mega
+          fqbn: arduino:avr:uno
           #libraries: |
            # - source-path: ./
             #- name: LiquidCrystal_PCF8574

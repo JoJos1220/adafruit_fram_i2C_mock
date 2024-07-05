@@ -1,3 +1,5 @@
+#define _MaxSizeFRAM 1000 //Using only a Buffer of 1000bytes for Testing on small HW like Arduino UNO
+
 #include "adafruit_fram_i2c_mock.h"
 
 /* Example code for the MOCK-Adafruit I2C FRAM
@@ -22,9 +24,9 @@ void setup(void) {
   // Test write ++
   framMOCK.write(0x0, test+1);
   
-  // dump the entire 32K of memory!
+  // dump the entire xxk of memory!
   uint8_t value;
-  for (uint16_t a = 0; a < 32768; a++) {
+  for (uint16_t a = 0; a < _MaxSizeFRAM; a++) {
     value = framMOCK.read(a);
     if ((a % 32) == 0) {
       Serial.print("\n 0x"); Serial.print(a, HEX); Serial.print(": ");
